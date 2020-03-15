@@ -1,9 +1,10 @@
 " PLUGINS
 " ----------
 
-call plug#begin('~/.vim/autoload/plug.vim')
+call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -18,4 +19,8 @@ set number
 
 " show commands
 set showcmd
+
+" CTRLP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
