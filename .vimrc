@@ -24,3 +24,6 @@ set showcmd
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+" NERDTREE BIND
+nmap <C-n> :NERDTreeToggle<CR>
+
