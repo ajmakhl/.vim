@@ -15,7 +15,7 @@ call plug#end()
 set viminfo+=n~/.vim/.viminfo
 
 " show line numbers
-set number
+set number relativenumber
 
 " show commands
 set showcmd
@@ -26,4 +26,3 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " NERDTREE BIND
 nmap <C-n> :NERDTreeToggle<CR>
-
