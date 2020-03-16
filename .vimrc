@@ -12,6 +12,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 
@@ -48,3 +49,6 @@ let g:prettier#config#semi = 'false'
 let g:prettier#config#trailing_comma = 'none'
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
+
+" CLOSE TAGS
+let g:closetag_filetypes = 'js,jsx,html,xhtml,phtml'
