@@ -26,3 +26,6 @@ tags
 /bundle
 /pack
 /plugged
+
+# msc
+.DS_Store
