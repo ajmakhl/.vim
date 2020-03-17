@@ -5,12 +5,14 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'morhetz/gruvbox'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 
@@ -43,7 +45,9 @@ nmap <C-\> :PrettierAsync<CR>
 
 " FORMATTERS
 " ---------- 
-
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+set background=dark
 let g:prettier#config#tab_width = 2 
 let g:prettier#config#semi = 'false'
 let g:prettier#config#trailing_comma = 'none'
@@ -52,3 +56,7 @@ let g:prettier#autoformat_require_pragma = 0
 
 " CLOSE TAGS
 let g:closetag_filetypes = 'js,jsx,html,xhtml,phtml'
+
+" SYNTAX
+" let g:vim_jsx_pretty_highlight_close_tag = 1
+let g:vim_jsx_pretty_colorful_config = 1
