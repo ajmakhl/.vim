@@ -56,6 +56,7 @@ let g:prettier#autoformat_require_pragma = 0
 
 " CLOSE TAGS
 let g:closetag_filetypes = 'js,jsx,html,xhtml,phtml'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.js'
 
 " SYNTAX
 " let g:vim_jsx_pretty_highlight_close_tag = 1
